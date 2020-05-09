@@ -1,3 +1,3 @@
-miAppAngular.controller('inicio',function($scope){
-    $scope.saludo="Hola";
-})
+miAppAngular.controller('navegacionControl',function($scope){
+
+});
