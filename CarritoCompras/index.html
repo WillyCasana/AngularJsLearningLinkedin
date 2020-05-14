@@ -46,24 +46,16 @@
     <div ng-controller="navegacionControl">
        
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-            <a class="navbar-brand" href="#">{{config.nombreDelSitio}}</a>
+            <a class="navbar-brand" href="#">Tienda Virtual WCS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item {{esActivo('/')}}">
-                  <a class="nav-link" href="#!">Inicio</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#!">Tienda Virtual</a>
                 </li>
-                <li class="nav-item {{esActivo('/galeria')}}">
-                  <a class="nav-link" href="#!galeria">Galeria</a>
-                </li>
-                <li class="nav-item {{esActivo('/mapa')}}">
-                  <a class="nav-link" href="#!mapa">Mapa</a>
-                </li>
-                <li class="nav-item {{esActivo('/contacto')}}">
-                    <a class="nav-link" href="#!contacto">Contacto</a>
-                  </li>
+               
               </ul>
             </div>
           </nav>
