@@ -9,21 +9,13 @@ miAppAngular.config(['$routeProvider',function($routeProvider){
         templateUrl:'plantillas/galeria.html',
         controller:'inicio'
     })
-    .when('/mapa',{
-        templateUrl:'plantillas/mapa.html',
-        controller:'inicio'
-    })
-    .when('/contacto',{
-        templateUrl:'plantillas/contacto.html',
+    .when('/confirmacion',{
+        templateUrl:'plantillas/confirmacion.html',
         controller:'inicio'
     })
     .when('/404',{
         templateUrl:'plantillas/404.html',
         controller:'inicio'
-    })
-    .when('/detalles/:empleadoId',{
-        templateUrl:'plantillas/detalles.html',
-        controller:'detalles'
     })
     .otherwise({
         redirectTo:'/404'

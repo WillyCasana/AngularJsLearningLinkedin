@@ -1,11 +1,27 @@
-miAppAngular.controller('inicio',function($scope,configuracionGlobal,$http,$location){
-    $scope.config=configuracionGlobal;
+miAppAngular.controller('inicio',function($scope){
+    $scope.productos=[
+        {
+            id:1,
+            nombre:"Producto 1",
+            descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            precio:10,
+            imagen:"producto.png"
+        },
+        {
+            id:2,
+            nombre:"Producto 2",
+            descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            precio:10,
+            imagen:"producto.png"
+        },
 
-    $http.get(configuracionGlobal.api_url + 'EmpleadoNg').then(function(respuesta){
-        $scope.empleados=respuesta.data;
-    })
-
-    $scope.verDetalles= function(_empleadoId){
-        $location.path("/detalles/" + _empleadoId);
-    }
-})
+        {
+            id:3,
+            nombre:"Producto 3",
+            descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            precio:10,
+            imagen:"producto.png"
+        }
+    ]
+});
+   
