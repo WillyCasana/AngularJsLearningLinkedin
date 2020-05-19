@@ -5,10 +5,6 @@ miAppAngular.config(['$routeProvider',function($routeProvider){
         templateUrl:'plantillas/inicio.html',
         controller:'inicio'
     })
-    .when('/galeria',{
-        templateUrl:'plantillas/galeria.html',
-        controller:'inicio'
-    })
     .when('/confirmacion',{
         templateUrl:'plantillas/confirmacion.html',
         controller:'inicio'
